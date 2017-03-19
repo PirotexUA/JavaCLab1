@@ -19,7 +19,7 @@ public class Zvd1 {
             y = Math.pow(x, 2);
         }
         else {
-            y = Math.pow(Math.exp(Math.cos(x)), 1 / 5);
+            y = Math.pow(Math.exp(Math.cos(x)), ((double)1 / (double)5));
         }
     }
 
