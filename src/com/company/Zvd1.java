@@ -30,21 +30,21 @@ public class Zvd1 {
             y = pow(x, 2);
         }
         else {
-            y = pow(exp(cos(x)), ((double)1 / (double)5));
+            y = pow(exp(cos(x)), (1.0E00 / 5.0E00));
         }
     }
 
     private void F2 () {
         if (y < 2.0E-01) {
-            z = (5.0E-01 * x - pow(y, 3) + 1);
+            z = (5.0E-01 * x - pow(y, 3.0E00) + 1.0E00);
         }
         else
             if (y > 2.0E-01){
-                z = pow(y, 2) / (x - 0.4);
+                z = pow(y, 2.0E00) / (x - 0.4E00);
             }
             else
                 if (y == 2.0E-01) {
-                    z = (1 - pow(y, 2)) / pow(3, x);
+                    z = (1 - pow(y, 2.0E00)) / pow(3.0E00, x);
                 }
     }
 }

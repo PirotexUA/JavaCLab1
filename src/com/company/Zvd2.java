@@ -22,7 +22,7 @@ public class Zvd2 {
 
         for (double _i = xPoch; _i <= xKinc; _i = _i + xDelta) {
             i++;
-            fX = pow(_i + (5.0E-01 * cos(_i)), (double)1/(double)3);
+            fX = pow(_i + (5.0E-01 * cos(_i)), 1.0E00 / 3.0E00);
             out.println(format("%2d | %18.16f |", i, fX));
         }
 
