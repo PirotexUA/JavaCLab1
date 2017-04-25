@@ -16,7 +16,7 @@ public class Zvd1 {
         System.out.println();
 
         Scanner in = new Scanner(System.in);
-        System.out.print("Insert x:");
+        System.out.println("Insert x:");
         x = in.nextDouble();
 
         F1();

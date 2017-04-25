@@ -8,5 +8,6 @@ public class Main {
 
         Zvd1 ZvdObj1 = new Zvd1();
         Zvd2 ZvdObj2 = new Zvd2();
+        Zvd3 ZvdObj3 = new Zvd3();
     }
 }
