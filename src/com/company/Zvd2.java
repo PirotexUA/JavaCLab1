@@ -5,7 +5,7 @@ import static java.lang.String.format;
 import static java.lang.System.out;
 
 /**
- * Created by Алексей on 19.03.2017.
+ * Created by Алексей on 19.03.2017.d
  */
 public class Zvd2 {
     private final double xPoch = -5.6E00, xKinc = 3.17E00, xDelta = 4.5E-01;
