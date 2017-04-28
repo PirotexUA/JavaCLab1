@@ -1,4 +1,5 @@
 package com.company;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import static java.lang.Math.*;
@@ -7,7 +8,7 @@ import static java.lang.Math.*;
  * Created by Алексей on 19.03.2017.
  */
 public class Zvd1 {
-    private double x = 0, y = 0, z = 0;
+    private double a = 0, b = 0, t = 0, n = 0, x = 0, z = 0, y = 0;
 
     Zvd1 () {
         System.out.println();
@@ -15,36 +16,43 @@ public class Zvd1 {
         System.out.println("Перше завдання:");
         System.out.println();
 
-        Scanner in = new Scanner(System.in);
-        System.out.println("Insert x:");
-        x = in.nextDouble();
+        while (true)
+        {
+            try {
+                Scanner in = new Scanner(System.in);
+                System.out.println("Insert a:");
+                a = in.nextDouble();
+                System.out.println("Insert b:");
+                b = in.nextDouble();
+                System.out.println("Insert t:");
+                t = in.nextDouble();
+                System.out.println("Insert n:");
+                n = in.nextDouble();
+                break;
+            } catch (InputMismatchException ex) {
+                System.out.println("ПОМИЛКА. Введіть число!");
+            }
+        }
 
         F1();
         F2();
-        System.out.println("y = " + y);
+        System.out.println("x = " + x);
         System.out.println("z = " + z);
     }
 
     private void F1 () {
-        if (x < 0) {
-            y = pow(x, 2);
-        }
-        else {
-            y = pow(exp(cos(x)), (1.0E00 / 5.0E00));
-        }
+        x = min(a, b) / min (t, n);
     }
 
     private void F2 () {
-        if (y < 2.0E-01) {
-            z = (5.0E-01 * x - pow(y, 3.0E00) + 1.0E00);
+        if (x > 5.0E-01) {
+            z = log(pow(x, 2.0E00) + 1.5E01) + pow(t, 2.0E00);
         }
-        else
-            if (y > 2.0E-01){
-                z = pow(y, 2.0E00) / (x - 0.4E00);
-            }
-            else
-                if (y == 2.0E-01) {
-                    z = (1 - pow(y, 2.0E00)) / pow(3.0E00, x);
-                }
+        if (x < 5.0E-01) {
+            z = cos( (3.0E00 *x - 1.1E00) / 1.5E01) + 3.0E-01 * t * exp(x);
+        }
+        if (x == 5.0E-01) {
+            z = x * pow(t + n, 1.0E00 / 3.0E00);
+        }
     }
 }
