@@ -14,7 +14,7 @@ public class Zvd2 {
     Zvd2() {
         System.out.println();
         System.out.println();
-        System.out.println("Друге завдання:");
+        System.out.println("Завдання 2:");
         System.out.println();
         int i = 0;
 

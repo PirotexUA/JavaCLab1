@@ -27,12 +27,12 @@ public class Zvd3 {
 
             arr = str.toCharArray();
 
-            if (((arr[0] - 48) + (arr[4] - 48)) > (arr[1] - 48)) {
+            if ((arr[0] + arr[4]) > arr[1]) {
                 System.out.println("Цифра: " + arr[1] + ". Поизція :2.");
                 exit = true;
             }
 
-            if (((arr[0] - 48) + (arr[4] - 48)) > (arr[2] - 48)) {
+            if ((arr[0] + arr[4]) > arr[2]) {
                 System.out.println("Цифра: " + arr[2] + ". Поизція :3.");
                 exit = true;
             }

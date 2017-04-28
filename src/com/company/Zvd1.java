@@ -13,7 +13,7 @@ public class Zvd1 {
     Zvd1 () {
         System.out.println();
         System.out.println();
-        System.out.println("Перше завдання:");
+        System.out.println("Завдання 1:");
         System.out.println();
 
         while (true)
@@ -30,7 +30,7 @@ public class Zvd1 {
                 n = in.nextDouble();
                 break;
             } catch (InputMismatchException ex) {
-                System.out.println("ПОМИЛКА. Введіть число!");
+                System.out.println("Неправильно! Ведіть число!");
             }
         }
 
