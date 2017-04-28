@@ -30,7 +30,7 @@ public class Zvd1 {
                 n = in.nextDouble();
                 break;
             } catch (InputMismatchException ex) {
-                System.out.println("Неправильно! Ведіть число!");
+                System.out.println("ПОМИЛКА! Ведіть число!");
             }
         }
 
